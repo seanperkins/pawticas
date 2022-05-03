@@ -95,3 +95,9 @@
 .list-item {
   list-style: none;
 }
+
+.center-vertical {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}

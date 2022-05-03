@@ -15,13 +15,13 @@ export default function Home() {
             className="tilt-left"
           />
         </div>
-        <div className="col-6">
+        <div className="col-6 center-vertical">
           <h2 className="text-plum">We treat your little one like family</h2>
           <p>Lorem ipsum ...</p>
         </div>
       </div>
       <div className="row py-3">
-        <div className="col-6">
+        <div className="col-6 center-vertical">
           <h2 className="text-plum">Services</h2>
           <ul className="list-group">
             <li class="list-item">
@@ -62,7 +62,7 @@ export default function Home() {
             style={{maxWidth: '100%'}}
           />
         </div>
-        <div className="col-6">
+        <div className="col-6 center-vertical">
           <h2 className="text-plum">Service Area</h2>
           <ul>
             {serviceArea.map((service) => (
