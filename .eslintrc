@@ -1,0 +1,23 @@
+{
+  "plugins": ["jsx-a11y", "@next/next", "unused-imports"],
+  "extends": ["next", "plugin:jsx-a11y/recommended", "prettier"],
+  "rules": {
+    "@next/next/no-img-element": "off",
+    "jsx-a11y/anchor-has-content": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "react/jsx-uses-react": 1,
+    "react/jsx-uses-vars": 1,
+    "no-unused-vars": "off",
+    "unused-imports/no-unused-imports": "error",
+    "react/no-unescaped-entities": "off",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ]
+  }
+}
