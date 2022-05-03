@@ -57,7 +57,9 @@
   color: $brand !important;
   font-family: $font-family-serif;
 }
-
+.polaroid-wrapper {
+  padding: 20px;
+}
 .polaroid {
   transform: scale(0.8, 0.8);
   background: #fff;

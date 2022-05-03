@@ -4,7 +4,7 @@ export default function Layout({children}) {
   return (
     <div>
       <MyNav />
-      <div className="container py-5">{children}</div>
+      <div className="container py-3">{children}</div>
     </div>
   )
 }
