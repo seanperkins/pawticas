@@ -101,3 +101,18 @@
   display: flex;
   flex-direction: column;
 }
+
+.social-link {
+  margin: 0;
+  padding: 0;
+  svg {
+    font-size: 1.75em;
+    color: $peach !important;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  span {
+    color: $body-color;
+  }
+}
