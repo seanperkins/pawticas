@@ -6,7 +6,7 @@ import serviceArea from '../constants/serviceArea'
 export default function Home() {
   return (
     <Layout>
-      <h1 className="text-center">Services & Prices</h1>
+      <h1 className="text-center py-3">Services & Prices</h1>
       <div className="row py-3" id="how-i-work">
         <div className="col-sm-10 offset-sm-1 col-md-6 offset-md-3 col-12">
           <h2>How I work</h2>
