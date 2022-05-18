@@ -26,7 +26,7 @@ export default function MyNav() {
       <Collapse navbar isOpen={isOpen}>
         <Nav className="me-auto" navbar>
           <NavItem>
-            <NavLink href="/services">Services</NavLink>
+            <NavLink href="/services-and-prices">Services & Prices</NavLink>
           </NavItem>
           <NavItem>
             <NavLink href="/testimonials">Testimonials</NavLink>

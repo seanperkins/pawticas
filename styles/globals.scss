@@ -49,6 +49,17 @@
   color: $plum;
 }
 
+.btn-plum {
+  color: $plum;
+  background-color: transparent;
+  border-color: $plum;
+  &:hover {
+    color: #fff;
+    background-color: $plum;
+    border-color: $plum;
+  }
+}
+
 // Nav
 .brand-text {
   font-size: 1.25rem;
