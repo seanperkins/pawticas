@@ -29,6 +29,9 @@ export default function MyNav() {
             <NavLink href="/services">Services</NavLink>
           </NavItem>
           <NavItem>
+            <NavLink href="/testimonials">Testimonials</NavLink>
+          </NavItem>
+          <NavItem>
             <NavLink href="/contact">Contact</NavLink>
           </NavItem>
         </Nav>

@@ -71,9 +71,11 @@
   height: auto;
 }
 .polaroid-caption {
+  padding-top: 1rem;
   font-size: 1.8rem;
   text-align: center;
-  line-height: 2em;
+  line-height: 1.2em;
+  min-height: 2.5em;
 }
 
 .polaroid:hover {
@@ -116,5 +118,13 @@
   }
   span {
     color: $body-color;
+  }
+}
+
+.floating-input {
+  flex: auto;
+  & input {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 }

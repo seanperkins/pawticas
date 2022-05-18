@@ -1,13 +1,15 @@
 const serviceArea = [
   "Scott's Addition",
   'Carytown',
-  'Museum District',
-  'The Fan',
-  'Randolf',
-  'Maymont',
+  'Church Hill',
+  'East End',
   'Jackson Ward',
+  'Maymont',
   'Monroe Ward',
+  'Museum District',
+  'Randolf',
   'Shockoe Bottom',
+  'The Fan',
 ]
 
 export default serviceArea
