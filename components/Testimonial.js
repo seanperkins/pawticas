@@ -26,7 +26,7 @@ export default function Testimonial({
         }`}
       >
         <div>
-          <p className="fst-italic h2">{text}</p>
+          <p className="fst-italic h4">{text}</p>
           <span className="h3">-{owner}</span>
         </div>
       </div>
