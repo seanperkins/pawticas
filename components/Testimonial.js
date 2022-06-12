@@ -16,7 +16,13 @@ export default function Testimonial({
       >
         <Polaroid
           src={image}
-          text={`${name}, ${breed}, ${age}yrs`}
+          text={
+            <span>
+              <span className="fw-bold">{name}</span>,{' '}
+              <span className="fw-light text-muted">{breed}</span>,{' '}
+              <span className="fw-light text-muted">{age}yrs</span>
+            </span>
+          }
           className={position === 'left' ? 'tilt-left' : 'tilt-right'}
         />
       </div>
@@ -26,8 +32,8 @@ export default function Testimonial({
         }`}
       >
         <div>
-          <p className="fst-italic h4">{text}</p>
-          <span className="h3">-{owner}</span>
+          <p className="fst-italic">{text}</p>
+          <span className="h5">-{owner}</span>
         </div>
       </div>
     </div>

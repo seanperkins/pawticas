@@ -24,7 +24,7 @@ export default function Home() {
         <h2 className="text-plum">Services</h2>
         <div className="col-12 col-md-4 text-center">
           <Polaroid
-            src="/images/bella.jpg"
+            src="/images/walking.jpg"
             text="Having the time of their lives"
             alt="Bella"
             className="tilt-left"
@@ -37,7 +37,7 @@ export default function Home() {
         </div>
         <div className="col-12 col-md-4 text-center">
           <Polaroid
-            src="/images/bella.jpg"
+            src="/images/walking.jpg"
             text="Having the time of their lives"
             alt="Bella"
             className="tilt-right"

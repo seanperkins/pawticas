@@ -22,10 +22,12 @@ export default function Home() {
       <div className="row py-3" id="walks">
         <div className="col-md-6 col-12">
           <Polaroid
-            src="/images/bella.jpg"
-            text="Bella"
-            alt="Bella"
-            className="tilt-left"
+            src="/images/walking-2.jpg"
+            text={
+              <span className="fst-italic text-muted">
+                Louie, Olive, and Bertie posing after having fun at the park
+              </span>
+            }
           />
         </div>
         <div className="col-md-6 col-12 center-vertical">
