@@ -12,7 +12,9 @@ export default function Testimonial({
   return (
     <div className="row testimonial">
       <div
-        className={`col-md-6 col-12 ${position === 'left' ? '' : 'order-0'}`}
+        className={`col-md-6 col-12 ${
+          position === 'left' ? 'order-md-1 order-0' : 'order-md-0 order-0'
+        }`}
       >
         <Polaroid
           src={image}
@@ -28,7 +30,7 @@ export default function Testimonial({
       </div>
       <div
         className={`center-vertical col-md-6 col-12 ${
-          position === 'left' ? '' : 'order-1'
+          position === 'left' ? 'order-md-0 order-1' : 'order-md-1 order-0'
         }`}
       >
         <div>
