@@ -44,6 +44,15 @@
 // Utilities
 @import 'bootstrap/scss/utilities/api';
 
+.content-box {
+  z-index: 1;
+  background-color: rgba(255, 243, 231, 0.7);
+}
+
+.min-height-500 {
+  min-height: 500px;
+}
+
 // Text Colors
 .text-plum {
   color: $plum;
@@ -68,31 +77,96 @@
   color: $brand !important;
   font-family: $font-family-serif;
 }
+.photo-wrapper,
 .polaroid-wrapper {
   padding: 20px;
 }
+.photo {
+  transform: scale(0.8, 0.8);
+}
+
 .polaroid {
   transform: scale(0.8, 0.8);
   background: #fff;
   padding: 1rem;
   box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
 }
+.photo > img {
+  box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  height: auto;
+}
 .polaroid > img {
   max-width: 100%;
   height: auto;
 }
+.photo-caption {
+  background-color: rgba(255, 243, 231, 0.8);
+  font-size: 1.3rem;
+  text-align: center;
+  text-shadow: $body-bg 0 0.5rem 0.5rem;
+}
 .polaroid-caption {
   padding-top: 1rem;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   text-align: center;
   line-height: 1.2em;
   min-height: 2.5em;
 }
 
+.photo:hover,
 .polaroid:hover {
   filter: none;
   transform: scale(1, 1) rotate(0deg) !important;
   transition: all 0.35s;
+}
+
+.multi-photos {
+  position: relative;
+}
+
+.multi-photo {
+  position: absolute;
+}
+
+.multi-photos {
+  .polaroid-wrapper:hover {
+    z-index: 10;
+  }
+  .polaroid-wrapper:nth-child(1) {
+    top: -50px;
+    left: -20%;
+  }
+  .polaroid-wrapper:nth-child(2) {
+    top: 50px;
+    right: -20%;
+  }
+  .polaroid-wrapper:nth-child(3) {
+    top: 150px;
+    left: -40%;
+  }
+  .polaroid-wrapper:nth-child(4) {
+    top: 250px;
+    right: -40%;
+  }
+}
+.multi-photos-right {
+  .polaroid-wrapper:nth-child(1) {
+    right: -20%;
+    left: auto;
+  }
+  .polaroid-wrapper:nth-child(2) {
+    left: -20%;
+    right: auto;
+  }
+  .polaroid-wrapper:nth-child(3) {
+    right: -40%;
+    left: auto;
+  }
+  .polaroid-wrapper:nth-child(4) {
+    left: -40%;
+    right: auto;
+  }
 }
 
 .tilt-left {
@@ -138,4 +212,16 @@
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
+}
+
+#background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }

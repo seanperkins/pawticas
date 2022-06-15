@@ -1,4 +1,4 @@
-export default function Polaroid({
+export default function Photo({
   src,
   text,
   alt,
@@ -11,9 +11,9 @@ export default function Polaroid({
       className={`polaroid-wrapper ${wrapperClassName ? wrapperClassName : ''}`}
       style={style ? style : {}}
     >
-      <div className={`polaroid ${className}`}>
-        <img className="polaroid-img" src={src} alt={alt} />
-        <div className="polaroid-caption">{text}</div>
+      <div className={`photo ${className}`}>
+        <img className="photo-img" src={src} alt={alt} />
+        <div className="photo-caption">{text}</div>
       </div>
     </div>
   )

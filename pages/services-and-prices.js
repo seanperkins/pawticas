@@ -1,5 +1,6 @@
 import ContactForm from '../components/ContactForm'
 import Layout from '../components/Layout'
+import MultiPhotos from '../components/MultiPhotos'
 import Polaroid from '../components/Polaroid'
 import serviceArea from '../constants/serviceArea'
 
@@ -20,17 +21,41 @@ export default function Home() {
         </div>
       </div>
       <div className="row py-3" id="walks">
-        <div className="col-md-6 col-12">
-          <Polaroid
-            src="/images/walking-2.jpg"
-            text={
-              <span className="fst-italic text-muted">
-                Louie, Olive, and Bertie posing after having fun at the park
-              </span>
-            }
+        <div className="col-md-6 col-12 min-height-500">
+          <MultiPhotos
+            type="polaroid"
+            photos={[
+              {
+                src: '/images/walking-2.jpg',
+                className: 'tilt-left',
+                text: (
+                  <span className="fst-italic text-muted">
+                    Louie, Olive, and Bertie posing after having fun at the park
+                  </span>
+                ),
+              },
+              {
+                src: '/images/in_the_hall.jpeg',
+                className: 'tilt-right',
+                text: (
+                  <span className="fst-italic text-muted">
+                    Chilling in the hall, picking up another friend
+                  </span>
+                ),
+              },
+              {
+                src: '/images/the_park.jpeg',
+                className: 'tilt-left',
+                text: (
+                  <span className="fst-italic text-muted">
+                    At the park, having all the fun
+                  </span>
+                ),
+              },
+            ]}
           />
         </div>
-        <div className="col-md-6 col-12 center-vertical">
+        <div className="col-md-6 col-12 center-vertical content-box">
           <h2 className="text-plum">Group & Solo Walks</h2>
           <p>
             I love walks almost as much as your furry friend so I guarantee we
@@ -65,15 +90,42 @@ export default function Home() {
         </div>
       </div>
       <div className="row py-3" id="cat-sitting">
-        <div className="col-md-6 col-12 order-md-2">
-          <Polaroid
-            src="/images/bella.jpg"
-            text="Bella"
-            alt="Bella"
-            className="tilt-right"
+        <div className="col-md-6 col-12 order-md-2 min-height-500">
+          <MultiPhotos
+            type="polaroid"
+            className="multi-photos-right"
+            photos={[
+              {
+                src: '/images/tululas-sister.jpeg',
+                className: 'tilt-right',
+                text: (
+                  <span className="fst-italic text-muted">
+                    She comes running everytime I come in
+                  </span>
+                ),
+              },
+              {
+                src: '/images/rafiki.jpeg',
+                className: 'tilt-left',
+                text: (
+                  <span className="fst-italic text-muted">
+                    Rafiki is so happy to see Laura
+                  </span>
+                ),
+              },
+              {
+                src: '/images/tulula2.jpeg',
+                className: 'tilt-right',
+                text: (
+                  <span className="fst-italic text-muted">
+                    Tulula really wants those treats
+                  </span>
+                ),
+              },
+            ]}
           />
         </div>
-        <div className="col-md-6 col-12 center-vertical order-md-1">
+        <div className="col-md-6 col-12 center-vertical order-md-1 content-box">
           <h2 className="text-plum">Cat sitting</h2>
           <p>
             While you are away, you can trust that I will take care of your
@@ -96,15 +148,40 @@ export default function Home() {
         </div>
       </div>
       <div className="row py-3" id="photo-sessions">
-        <div className="col-md-6 col-12">
-          <Polaroid
-            src="/images/bella.jpg"
-            text="Bella"
-            alt="Bella"
-            className="tilt-left"
+        <div className="col-md-6 col-12 min-height-500">
+          <MultiPhotos
+            photos={[
+              {
+                src: '/images/theo3.jpeg',
+                className: 'tilt-left',
+                text: (
+                  <span className="fst-italic text-muted">
+                    Jungle or flower bed, you decide
+                  </span>
+                ),
+              },
+              {
+                src: '/images/theo2.jpeg',
+                className: 'tilt-right',
+                text: (
+                  <span className="fst-italic text-muted">
+                    Take a picture of my toy too
+                  </span>
+                ),
+              },
+              {
+                src: '/images/theo.jpeg',
+                className: 'tilt-left',
+                text: (
+                  <span className="fst-italic text-muted">
+                    Theo looking like a prince
+                  </span>
+                ),
+              },
+            ]}
           />
         </div>
-        <div className="col-md-6 col-12 center-vertical">
+        <div className="col-md-6 col-12 center-vertical content-box">
           <h2 className="text-plum">Photo sessions</h2>
           <p>
             Let me capture the best side of you and your furry friend. We will

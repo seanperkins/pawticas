@@ -16,6 +16,7 @@ export default function TestimonialsPage() {
       </div>
       {testimonials.map((testimonial, index) => (
         <Testimonial
+          key={testimonial.name}
           position={index % 2 === 0 ? 'left' : 'right'}
           {...testimonial}
         />

@@ -31,6 +31,14 @@ const testimonials = [
     owner: 'Sarah',
     text: `We love Laura, and she will love your dog as if they were her own fur babies! Laura was reliable and was always considerate of Molly’s super sensitive stomach. Molly would recommend her any day!`,
   },
+  {
+    name: 'Louie',
+    age: 3,
+    breed: 'Bichon-Shih Tzu',
+    image: '/images/louie.jpeg',
+    owner: 'Sophie',
+    text: `Laura has been an incredible sitter for my pup Louie. I can always rely on her to show up on time, let me know how he’s doing, and of course send me amazing photos of him on his walks with her. Laura has such a love for all dogs and gives them the best care!`,
+  },
 ]
 
 export default testimonials
