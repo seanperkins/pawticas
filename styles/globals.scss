@@ -50,7 +50,7 @@
 }
 
 .min-height-500 {
-  min-height: 500px;
+  min-height: 700px;
 }
 
 // Text Colors
@@ -123,6 +123,11 @@
 
 .multi-photos {
   position: relative;
+  display: flex;
+  max-width: 400px;
+  height: 100%;
+  max-height: 300px;
+  width: 100%;
 }
 
 .multi-photo {
@@ -134,38 +139,30 @@
     z-index: 10;
   }
   .polaroid-wrapper:nth-child(1) {
-    top: -50px;
-    left: -20%;
+    top: -50%;
+    left: -40px;
   }
   .polaroid-wrapper:nth-child(2) {
-    top: 50px;
-    right: -20%;
+    top: 0;
+    right: -140px;
   }
   .polaroid-wrapper:nth-child(3) {
-    top: 150px;
-    left: -40%;
-  }
-  .polaroid-wrapper:nth-child(4) {
-    top: 250px;
-    right: -40%;
+    top: 50%;
+    left: -160px;
   }
 }
 .multi-photos-right {
   .polaroid-wrapper:nth-child(1) {
-    right: -20%;
+    right: -40px;
     left: auto;
   }
   .polaroid-wrapper:nth-child(2) {
-    left: -20%;
+    left: -100px;
     right: auto;
   }
   .polaroid-wrapper:nth-child(3) {
-    right: -40%;
+    right: -100px;
     left: auto;
-  }
-  .polaroid-wrapper:nth-child(4) {
-    left: -40%;
-    right: auto;
   }
 }
 

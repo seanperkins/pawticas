@@ -34,8 +34,8 @@ export default function Testimonial({
         }`}
       >
         <div>
-          <p className="fst-italic">{text}</p>
-          <span className="h5">-{owner}</span>
+          <p className="fst-italic fs-4">"{text}"</p>
+          <span className="h5 ms-3 mt-3">-{owner}</span>
         </div>
       </div>
     </div>

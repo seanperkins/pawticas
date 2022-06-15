@@ -8,7 +8,7 @@ export default function Contact() {
 
   return (
     <Layout>
-      <h1 className="text-center py-3">Contact</h1>
+      <h1 className="text-center pt-5 pb-3">Contact</h1>
       <pre>{JSON.stringify(query, undefined, 2)}</pre>
     </Layout>
   )

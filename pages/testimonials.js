@@ -5,12 +5,12 @@ import testimonials from '../constants/testimonials'
 export default function TestimonialsPage() {
   return (
     <Layout>
-      <div className="row py-3">
-        <div className="col-md-6 offset-md-3 col-12">
-          <h1 className="text-center">Testimonials</h1>
-          <p>
-            Our clients love us. So will you and your pet. Here are some nice
-            things folks have said about us.
+      <div className="row justify-content-center pt-5 pb-3">
+        <div className="col-md-6 col-12">
+          <h1 className="text-center mb-3">Testimonials</h1>
+          <p className="text-center fs-5">
+            Our clients love us. So will you and your pet. <br />
+            Here are some nice things folks have said about us.
           </p>
         </div>
       </div>

@@ -7,10 +7,10 @@ import serviceArea from '../constants/serviceArea'
 export default function Home() {
   return (
     <Layout>
-      <h1 className="text-center py-3">Services & Prices</h1>
-      <div className="row py-3" id="how-i-work">
-        <div className="col-sm-10 offset-sm-1 col-md-6 offset-md-3 col-12">
-          <h2>How I work</h2>
+      <h1 className="text-center pt-5 pb-3">Services & Prices</h1>
+      <div className="row py-3 justify-content-center" id="how-i-work">
+        <div className="col-sm-10 col-md-6 col-12">
+          <h2 className="fst-italic">How I work</h2>
           <p>
             Whether its for cat sitting, photos, or walks, I take the time to
             get to know you and your little fury friend(s). Before we start, we
@@ -21,9 +21,8 @@ export default function Home() {
         </div>
       </div>
       <div className="row py-3" id="walks">
-        <div className="col-md-6 col-12 min-height-500">
+        <div className="col-md-6 col-12 min-height-500 d-flex align-items-center justify-content-center">
           <MultiPhotos
-            type="polaroid"
             photos={[
               {
                 src: '/images/walking-2.jpg',
@@ -92,7 +91,6 @@ export default function Home() {
       <div className="row py-3" id="cat-sitting">
         <div className="col-md-6 col-12 order-md-2 min-height-500">
           <MultiPhotos
-            type="polaroid"
             className="multi-photos-right"
             photos={[
               {

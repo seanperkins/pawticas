@@ -2,7 +2,7 @@ import Photo from './Photo'
 import Polaroid from './Polaroid'
 
 export default function MultiPhoto({className, photos, type}) {
-  let PhotoComponent = type === 'polaroid' ? Polaroid : Photo
+  let PhotoComponent = type === 'photo' ? Photo : Polaroid
   return (
     <div className={`multi-photos ${className ? className : ''}`}>
       {photos.map((photo, index) => (
