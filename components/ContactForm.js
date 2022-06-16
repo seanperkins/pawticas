@@ -1,7 +1,9 @@
 import {useEffect, useRef} from 'react'
 import {useState} from 'react'
 import ReactInputMask from 'react-input-mask'
+
 import useSubmit from '../hooks/useSubmit'
+import {event} from '../utilities/googleAnalytics'
 
 export default function ContactForm({subject}) {
   const [numberOrEmail, setNumberOrEmail] = useState('number')
@@ -21,6 +23,17 @@ export default function ContactForm({subject}) {
 
   function handleChange(event) {
     setNumberOrEmail(event.target.value)
+  }
+
+  function handleFormSubmit(e) {
+    event({
+      action: 'submit',
+      params: {
+        category: 'contact',
+        subject: formSubject,
+      },
+    })
+    handleSubmit(e)
   }
 
   return (
