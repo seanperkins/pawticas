@@ -6,7 +6,7 @@ import useSubmit from '../hooks/useSubmit'
 export default function ContactForm({subject}) {
   const [numberOrEmail, setNumberOrEmail] = useState('number')
   const [formSubject, setFormSubject] = useState(subject)
-  const {handleSubmit, result, error} = useSubmit()
+  const {handleSubmit, canSubmit, result, error} = useSubmit()
   const formRef = useRef(null)
 
   useEffect(() => {
@@ -151,7 +151,11 @@ export default function ContactForm({subject}) {
         </div>
       )}
       <div className="d-grid gap-2">
-        <button className="btn btn-primary btn-lg btn-block" type="submit">
+        <button
+          disabled={!canSubmit}
+          className="btn btn-primary btn-lg btn-block"
+          type="submit"
+        >
           Submit
         </button>
       </div>

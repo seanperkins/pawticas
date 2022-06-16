@@ -23,7 +23,7 @@ async function sendEmail(req, res) {
     const result = await sendgrid.send({
       to: emailTo, // Your email where you'll receive emails
       from: 'noreply@pawticas.com', // your website email address here
-      subject: `${req.body.subject}`,
+      subject: `${req.body.subject} from ${req.body.name}`,
       html: generateEmail(req.body),
     })
     if (result.statusCode !== 202) {
