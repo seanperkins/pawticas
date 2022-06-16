@@ -47,7 +47,7 @@ export default function Home() {
                 />
               </div>
               <div className="col-12 col-md-6 col-lg-12 center-vertical">
-                <h3>Group & Solo Walks</h3>
+                <h3 className="text-start">Group & Solo Walks</h3>
                 <p className="text-start">
                   They get a fun walk around the block, playtime at the park, or
                   a quick bathroom break. You get peace of mind and great
@@ -70,7 +70,7 @@ export default function Home() {
                 />
               </div>
               <div className="col-12 col-md-6 col-lg-12 center-vertical order-md-0 order-lg-0">
-                <h3>Cat Sitting</h3>
+                <h3 className="text-start">Cat Sitting</h3>
                 <p className="text-start">
                   Its hard to be away from the ones we love. Let us take care of
                   them so you can enjoy your travel.
@@ -96,7 +96,7 @@ export default function Home() {
                 />
               </div>
               <div className="col-12 col-md-6 col-lg-12 center-vertical">
-                <h3>Photo sessions</h3>
+                <h3 className="text-start">Photo sessions</h3>
                 <p className="text-start">
                   Capture the best side of your pup through a photo shoot. Laura
                   has the patience and experience to get the most out of your

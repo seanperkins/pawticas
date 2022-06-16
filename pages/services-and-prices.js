@@ -6,8 +6,8 @@ import serviceArea from '../constants/serviceArea'
 
 export default function Home() {
   return (
-    <Layout className="container">
-      <h1 className="text-center pt-5 pb-3">Services & Prices</h1>
+    <Layout className="container py-5">
+      <h1 className="text-center pb-3">Services & Prices</h1>
       <p className="text-center">
         We will work with you to come up with how best to serve you and your
         furry friend.

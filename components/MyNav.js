@@ -18,7 +18,7 @@ export default function MyNav() {
   const toggle = () => setIsOpen(!isOpen)
 
   return (
-    <Navbar color="white" expand="md" light className="shadow-sm" sticky="top">
+    <Navbar expand="md" light className="shadow-sm bg-body" sticky="top">
       <NavbarBrand className="brand-text" href="/">
         Pawticas
       </NavbarBrand>

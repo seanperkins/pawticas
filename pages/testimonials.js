@@ -4,8 +4,8 @@ import testimonials from '../constants/testimonials'
 
 export default function TestimonialsPage() {
   return (
-    <Layout className="container">
-      <div className="row justify-content-center pt-5 pb-3">
+    <Layout className="container py-5">
+      <div className="row justify-content-center pb-3">
         <div className="col-md-6 col-12">
           <h1 className="text-center mb-3">Testimonials</h1>
           <p className="text-center">

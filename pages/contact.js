@@ -1,15 +1,19 @@
 import {useRouter} from 'next/router'
+import ContactForm from '../components/ContactForm'
 import Layout from '../components/Layout'
 
 export default function Contact() {
   const router = useRouter()
 
-  const {query} = router
+  const {
+    query,
+    query: {subject},
+  } = router
 
   return (
-    <Layout className="container">
-      <h1 className="text-center pt-5 pbgt-3">Contact</h1>
-      <pre>{JSON.stringify(query, undefined, 2)}</pre>
+    <Layout className="container py-5">
+      <h1 className="text-center mb-5">Contact</h1>
+      <ContactForm subject={subject} />
     </Layout>
   )
 }
