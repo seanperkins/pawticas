@@ -6,20 +6,12 @@ import serviceArea from '../constants/serviceArea'
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout className="container">
       <h1 className="text-center pt-5 pb-3">Services & Prices</h1>
-      <div className="row py-3 justify-content-center" id="how-i-work">
-        <div className="col-sm-10 col-md-6 col-12">
-          <h2 className="fst-italic">How I work</h2>
-          <p>
-            Whether its for cat sitting, photos, or walks, I take the time to
-            get to know you and your little fury friend(s). Before we start, we
-            can meet in a place your pet is comfortable so that I may learn more
-            about how they behave outside and around others. Together we can
-            create a plan for how our time together will be spent.
-          </p>
-        </div>
-      </div>
+      <p className="text-center">
+        We will work with you to come up with how best to serve you and your
+        furry friend.
+      </p>
       <div className="row py-3" id="walks">
         <div className="col-md-6 col-12 min-height-500 d-flex align-items-center justify-content-center">
           <MultiPhotos

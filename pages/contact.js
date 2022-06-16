@@ -7,8 +7,8 @@ export default function Contact() {
   const {query} = router
 
   return (
-    <Layout>
-      <h1 className="text-center pt-5 pb-3">Contact</h1>
+    <Layout className="container">
+      <h1 className="text-center pt-5 pbgt-3">Contact</h1>
       <pre>{JSON.stringify(query, undefined, 2)}</pre>
     </Layout>
   )

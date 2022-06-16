@@ -4,11 +4,11 @@ import testimonials from '../constants/testimonials'
 
 export default function TestimonialsPage() {
   return (
-    <Layout>
+    <Layout className="container">
       <div className="row justify-content-center pt-5 pb-3">
         <div className="col-md-6 col-12">
           <h1 className="text-center mb-3">Testimonials</h1>
-          <p className="text-center fs-5">
+          <p className="text-center">
             Our clients love us. So will you and your pet. <br />
             Here are some nice things folks have said about us.
           </p>
