@@ -17,15 +17,6 @@ export default function Home() {
           <MultiPhotos
             photos={[
               {
-                src: '/images/walking-2.jpg',
-                className: 'tilt-left',
-                text: (
-                  <span className="fst-italic text-muted">
-                    Louie, Olive, and Bertie posing after having fun at the park
-                  </span>
-                ),
-              },
-              {
                 src: '/images/in_the_hall.jpeg',
                 className: 'tilt-right',
                 text: (
@@ -40,6 +31,15 @@ export default function Home() {
                 text: (
                   <span className="fst-italic text-muted">
                     At the park, having all the fun
+                  </span>
+                ),
+              },
+              {
+                src: '/images/walking-2.jpg',
+                className: 'tilt-left',
+                text: (
+                  <span className="fst-italic text-muted">
+                    Louie, Olive, and Bertie posing after having fun on a walk
                   </span>
                 ),
               },
