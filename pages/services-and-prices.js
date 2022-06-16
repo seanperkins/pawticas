@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import ContactForm from '../components/ContactForm'
 import Layout from '../components/Layout'
 import MultiPhotos from '../components/MultiPhotos'
@@ -7,6 +8,15 @@ import serviceArea from '../constants/serviceArea'
 export default function Home() {
   return (
     <Layout className="container py-5">
+      <Head>
+        <title>
+          Services & Prices | Petcare in Richmond, Viriginia | Pawticas
+        </title>
+        <meta
+          name="description"
+          content="Group & solo walks, cat sitting, and photo sessions for you and your furry friend."
+        />
+      </Head>
       <h1 className="text-center pb-3">Services & Prices</h1>
       <p className="text-center">
         We will work with you to come up with how best to serve you and your

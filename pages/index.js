@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Link from 'next/link'
 import ContactForm from '../components/ContactForm'
 import Layout from '../components/Layout'
@@ -7,6 +8,13 @@ import serviceArea from '../constants/serviceArea'
 export default function Home() {
   return (
     <Layout>
+      <Head>
+        <title>Home | Petcare in Richmond, Viriginia | Pawticas</title>
+        <meta
+          name="description"
+          content="We are great at taking care of your furry friends for the same reason you are, we treat them like family."
+        />
+      </Head>
       <section className="hero text-white">
         <div className="container-fluid">
           <div className="row py-3">

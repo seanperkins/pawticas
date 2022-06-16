@@ -1,3 +1,5 @@
+import Head from 'next/head'
+
 import Layout from '../components/Layout'
 import Testimonial from '../components/Testimonial'
 import testimonials from '../constants/testimonials'
@@ -5,6 +7,13 @@ import testimonials from '../constants/testimonials'
 export default function TestimonialsPage() {
   return (
     <Layout className="container py-5">
+      <Head>
+        <title>Testimonials | Petcare in Richmond, Viriginia | Pawticas</title>
+        <meta
+          name="description"
+          content="Our clients love us and we think you will too if you get to know us."
+        />
+      </Head>
       <div className="row justify-content-center pb-3">
         <div className="col-md-6 col-12">
           <h1 className="text-center mb-3">Testimonials</h1>
