@@ -37,7 +37,7 @@ export default function MyNav() {
         </Nav>
         <a
           className="nav-link social-link"
-          href="https://www.instagram.com/pawticas.dc/"
+          href="https://www.instagram.com/pawticas.va/"
           target="_blank"
         >
           <span className="d-md-none">Instagram</span> <FaInstagram />
