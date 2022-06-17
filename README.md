@@ -1,4 +1,4 @@
-# Social Sector Infrastructure
+# Pawticas
 
 ## Getting started
 
