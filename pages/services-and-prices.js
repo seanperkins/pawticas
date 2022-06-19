@@ -114,7 +114,7 @@ export default function Home() {
                 ),
               },
               {
-                src: '/images/tulula2.jpeg',
+                src: '/images/tulula2.jpg',
                 className: 'tilt-right',
                 text: (
                   <span className="fst-italic text-muted">
@@ -152,7 +152,7 @@ export default function Home() {
           <MultiPhotos
             photos={[
               {
-                src: '/images/theo3.jpeg',
+                src: '/images/theo3.jpg',
                 className: 'tilt-left',
                 text: (
                   <span className="fst-italic text-muted">
@@ -170,7 +170,7 @@ export default function Home() {
                 ),
               },
               {
-                src: '/images/theo.jpeg',
+                src: '/images/theo.jpg',
                 className: 'tilt-left',
                 text: (
                   <span className="fst-italic text-muted">
