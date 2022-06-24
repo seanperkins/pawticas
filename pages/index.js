@@ -3,6 +3,7 @@ import Link from 'next/link'
 import ContactForm from '../components/ContactForm'
 import Layout from '../components/Layout'
 import Polaroid from '../components/Polaroid'
+import ServiceArea from '../components/ServiceArea'
 import serviceArea from '../constants/serviceArea'
 
 export default function Home() {
@@ -119,23 +120,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="row py-5">
-          <div className="col-md-6 col-12 mb-3">
-            <img
-              src="/images/map.png"
-              alt="Richmond Map"
-              style={{width: '100%', height: 'auto'}}
-            />
-          </div>
-          <div className="col-md-6 col-12 center-vertical">
-            <h2 className="text-plum">Service Area</h2>
-            <ul>
-              {serviceArea.map((service) => (
-                <li key={service}>{service}</li>
-              ))}
-            </ul>
-          </div>
-        </div>
+        <ServiceArea />
         <div className="row py-3">
           <div className="col-12">
             <h2 className="text-plum">Contact</h2>

@@ -2,6 +2,7 @@ import Head from 'next/head'
 import {useRouter} from 'next/router'
 import ContactForm from '../components/ContactForm'
 import Layout from '../components/Layout'
+import ServiceArea from '../components/ServiceArea'
 
 export default function Contact() {
   const router = useRouter()
@@ -22,6 +23,9 @@ export default function Contact() {
       </Head>
       <h1 className="text-center mb-5">Contact</h1>
       <ContactForm subject={subject} />
+      <div className="col-12 p-4">
+        <ServiceArea />
+      </div>
     </Layout>
   )
 }
