@@ -39,6 +39,22 @@ const testimonials = [
     owner: 'Sophie',
     text: `Laura has been an incredible sitter for my pup Louie. I can always rely on her to show up on time, let me know how he’s doing, and of course send me amazing photos of him on his walks with her. Laura has such a love for all dogs and gives them the best care!`,
   },
+  {
+    name: 'Pepita',
+    age: '1',
+    breed: 'Poodle',
+    image: '/images/pepita.jpg',
+    owner: 'Jessica',
+    text: `Pepita always loved to go on walks with Laura and her doggy friends. Laura has always been super attentive, she would text us summaries of how the walk went, and we’re grateful that she would always mention when something seemed odd. The pictures were so nice to see while we were at work! We miss Laura and Richmond is fortunate to have her.`,
+  },
+  {
+    name: 'Caleb',
+    age: '7',
+    breed: 'Good Dog',
+    image: '/images/caleb.jpg',
+    owner: 'Rebecca',
+    text: `Laura is an amazing dog walker!  We were so lucky to have her in our lives for so many years.  She is so loving and caring with all of her dogs and is super responsible and careful.  I would highly recommend her to anyone!`,
+  },
 ]
 
 export default testimonials
