@@ -126,13 +126,13 @@ export default function Home() {
           />
         </div>
         <div className="col-md-6 col-12 center-vertical order-md-1 content-box">
-          <h2 className="text-plum">Cat sitting</h2>
+          <h2 className="text-plum">Pet sitting</h2>
           <p>
             While you are away, you can trust that I will take care of your
             little one. During each visit, I can: give food & water, take care
-            of the litter box, play, groom, and give treats. If they need
-            medications, I can administer them. I am also happy to turn on or
-            off lights plus bring in any packages/mail.
+            of the litter box, play, groom, potty break, and give treats. If
+            they need medications, I can administer them. I am also happy to
+            turn on or off lights plus bring in any packages/mail.
           </p>
           <ul>
             <li>

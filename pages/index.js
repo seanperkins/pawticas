@@ -79,14 +79,14 @@ export default function Home() {
                 />
               </div>
               <div className="col-12 col-md-6 col-lg-12 center-vertical order-md-0 order-lg-0">
-                <h3 className="text-start">Cat Sitting</h3>
+                <h3 className="text-start">Pet Sitting</h3>
                 <p className="text-start">
                   Its hard to be away from the ones we love. Let us take care of
                   them so you can enjoy your travel.
                 </p>
                 <p className="text-start">
-                  Litter box maintenance, feeding, playtime, and cuddles
-                  included.
+                  Litter box maintenance, feeding, playtime, potty break, and
+                  cuddles included.
                 </p>
                 <Link href="/services-and-prices#cat-sitting">
                   <a className="btn btn-outline-primary">See sitting prices</a>
