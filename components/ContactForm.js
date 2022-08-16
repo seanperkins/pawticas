@@ -121,9 +121,9 @@ export default function ContactForm({subject}) {
       }
       {
         // Cat Sitting
-        formSubject === 'cat-sitting' && (
+        formSubject === 'pet-sitting' && (
           <>
-            <PetsName label="Your Cat's Name" />
+            <PetsName label="Your Pet's Name" />
             <AppointmentDate label="Ideal Sitting Date" />
             <Neighborhood />
           </>
@@ -242,8 +242,8 @@ function getFormSubject(subject) {
   switch (subject) {
     case 'walks':
       return 'Pawticas: Walks'
-    case 'cat-sitting':
-      return 'Pawticas: Cat Sitting'
+    case 'pet-sitting':
+      return 'Pawticas: Pet Sitting'
     case 'photo-session':
       return 'Pawticas: Photo Sessions'
     default:
